@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assurance Lloyd - Statistique des Tickets</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Logo Assurance Lloyd" class="logo">
+            <h1> Gestion Des Réclamations Sinistres Auto</h1>
+            <nav id="xx">
+                <a  href="index2.html" >KPIs</a>  
+            </nav>
+        </header>
+        <main>
+            <section id="uploadData">
+                <h2>Télécharger les Données</h2>
+                <input type="file" id="fileInput" accept=".csv">
+                <button id="uploadButton">Télécharger et Traiter</button>
+                <section id="manualInput"> 
+                    <form>
+                        <button type="button" onclick="calculateStatistics()">Calculer les Statistiques</button>
+                    </form>
+                </section>
+
+                <div id="results5"></div>
+                <div id="results"></div>
+                <div id="results1"></div>
+                <div id="results2"></div>
+                <div id="results3"></div>
+                <div id="results4"></div>
+            </section>
+
+            <div id="statistics" class="statistics">
+                <h2>Statistiques</h2>
+                <div class="chart-container">
+                    <canvas id="treatmentTimesChart" width="400" height="200"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="nonTreatedChart" width="400" height="200"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="averagesChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

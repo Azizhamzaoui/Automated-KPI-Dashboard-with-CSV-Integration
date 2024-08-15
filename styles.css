@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+#xx {
+    text-align: right;
+    
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 2px solid #dcdcdc;
+}
+
+header .logo {
+    width: 250px; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #004187;
+    font-size: 2em;
+    margin-top: 20px;
+    font-weight: 700; 
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: #004187;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500; 
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    color: #333;
+    font-size: 16px; 
+}
+
+button {
+    padding: 12px;
+    background-color: #004187;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+.statistics {
+    margin-top: 30px;
+}
+
+.chart-container {
+    margin-top: 20px;
+    background-color: #04033a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%; 
+    max-width: 600px;
+    height: 300px; 
+    margin: auto;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#results, #results1, #results2, #results3, #results4, #results5 {
+    background-color: #f7f7f7; 
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin-top: 10px;
+    font-size: 18px; 
+    font-weight: 500; 
+    color: #333; 
+    text-align: center; 
+}
